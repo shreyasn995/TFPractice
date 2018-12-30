@@ -5,6 +5,7 @@ const height = 500;
 const learningRate = 0.5;
 const optimizer = tf.train.sgd(learningRate);
 
+// Equation for a line is y = mx + b
 let m, b;
 
 const loss = (preds, labels) => preds.sub(labels).square().mean();
